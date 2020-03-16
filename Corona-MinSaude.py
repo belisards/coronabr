@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[21]:
+# In[1]:
 
 
 import wget
@@ -11,7 +11,7 @@ import datetime
 from pandas.io.json import json_normalize
 
 
-# In[32]:
+# In[4]:
 
 
 # Baixa o arquivo JS
@@ -20,7 +20,7 @@ arquivo = 'database.js'
 wget.download(url + arquivo, arquivo)
 
 
-# In[33]:
+# In[6]:
 
 
 # Converte Js para Json
@@ -34,17 +34,17 @@ base_js.close()
 base_json.close()
 
 
-# In[34]:
+# In[18]:
 
 
 # Exporta o dataframe e insere nome dos estados
 df = json.load(open('database.json'))
-df = json_normalize(data=df['brazil'], record_path='values',meta='date')
+df = json_normalize(data=df['brazil'], record_path='values',meta=['date','time'])
 indice = pd.read_csv('indice.csv')
 df = pd.merge(df, indice, on='uid', how='left')
 
 
-# In[35]:
+# In[19]:
 
 
 # Exporta a base em CSV com a data da execução no nome do arquivo
