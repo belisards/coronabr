@@ -10,17 +10,17 @@ O arquivo é exportado com a data de execução do script.
 Os dados abertos em CSV podem ser acessados diretamente pasta `dados`. Ele é composto das colunas abaixo.
 
 * uid = Número de identificação da UF
-* suspects
-* refuses
-* confirmado
-* deads
-* local
-* cases
-* comments
-* broadcast = Transmissão comunitária
-* date = Data de registro dos dados
-* uf = coluna adicionada pelo script, com a sigla da UF
+* suspects = Casos suspeitos
+* refuses = Descartados
+* confirmado = A coluna não é utilizada até o momento
+* deads = Mortes
+* local = Aparentemente, não é utilizada. Vide as observações.
+* cases = Casos confirmados
+* comments = Comentário sobre transmissão comunitária (Ex: "Transmissão comunitária no município do Rio de Janeiro")
+* broadcast = Transmissão comunitária (True/False)
+* date = Data de registro dos dados (%dd/%mm/%yyyy)
+* uf = Coluna adicionada pelo script, com a sigla da UF
 
 
 ## Observações
-Há um registro de 1 caso na coluna "refuses" na data 18/02/2020, sem estado (uid) atribuído.
+Há um registro de 1 caso na coluna "refuses" na data 18/02/2020, sem estado (uid) atribuído e com o campo "local" igual a FALSE.
