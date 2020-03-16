@@ -2,8 +2,6 @@ Dados de monitoramento da pandemia COVID-19 no Brasil, fornecidos pelo
 Ministério da Saúde no site
 [http://plataforma.saude.gov.br/novocoronavirus/](http://plataforma.saude.gov.br/novocoronavirus/).
 
-[![goodtables.io](https://goodtables.io/badge/github/belisards/coronabr.svg)](https://goodtables.io/github/belisards/coronabr)
-
 # Extrator de dados históricos do coronavírus no Brasil
 
 O script (Python/Jupyter Notebook) baixa os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
@@ -17,7 +15,12 @@ O arquivo é exportado no formato CSV, com a data de execução do script.
 
 
 ## Dados abertos
-Os dados abertos podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
+Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
+
+### Validação dos dados
+É possível realizar a validação contínua dos dados extraídos através do Goodtables. Atualmente, por exemplo, existem 15 registros duplicados.
+
+[![goodtables.io](https://goodtables.io/badge/github/belisards/coronabr.svg)](https://goodtables.io/github/belisards/coronabr)
 
 ### Colunas
 O CSV é composto das colunas abaixo:
