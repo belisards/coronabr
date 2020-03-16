@@ -1,0 +1,124 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "coronabr",
+      "path": "coronabr.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "uid",
+            "type": "integer",
+            "format": "default",
+            "description": "Número de identificação da UF",
+            "title": "uid"
+          },
+          {
+            "name": "suspects",
+            "type": "integer",
+            "format": "default",
+            "description": "Quantidade de casos suspeitos",
+            "title": "Casos suspeitos"
+          },
+          {
+            "name": "refuses",
+            "type": "integer",
+            "format": "default",
+            "title": "Descartados",
+            "description": "Quantidade de casos descartados"
+          },
+          {
+            "name": "confirmado",
+            "type": "integer",
+            "format": "default",
+            "description": "A coluna não é utilizada até o momento",
+            "title": "confirmado"
+          },
+          {
+            "name": "deads",
+            "type": "integer",
+            "format": "default",
+            "title": "deaths",
+            "description": "Mortes (nota: o erro em inglês no nome do campo vem da fonte original)"
+          },
+          {
+            "name": "local",
+            "type": "any",
+            "format": "default",
+            "description": "Aparentemente, não é utilizada. Vide as observações.",
+            "title": "local"
+          },
+          {
+            "name": "cases",
+            "type": "integer",
+            "format": "default",
+            "description": "Quantidade de casos confirmados",
+            "title": "Casos confirmados"
+          },
+          {
+            "name": "comments",
+            "type": "string",
+            "format": "default",
+            "description": "Comentário sobre os dados (Ex: \"Transmissão comunitária no município do Rio de Janeiro\" ou \"1 Portador assintomático\")",
+            "title": "Comentários"
+          },
+          {
+            "name": "broadcast",
+            "type": "boolean",
+            "format": "default",
+            "description": "Transmissão comunitária (True/False)",
+            "title": "Transmissão comunitária"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "format": "%d/%m/%Y",
+            "title": "Data de registro",
+            "description": "Data de registro dos dados (%dd/%mm/%yyyy)"
+          },
+          {
+            "name": "time",
+            "type": "time",
+            "format": "%H:%M",
+            "description": "Hora do registro dos dados (%hh:%mm)",
+            "title": "Hora do registro"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "format": "default",
+            "description": "Coluna adicionada pelo script, com a sigla da UF",
+            "title": "Sigla da UF"
+          }
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    "covid-19",
+    "corona-virus",
+    "brasil",
+    "brazil",
+    "health",
+    "pandemic"
+  ],
+  "name": "covid-19-br",
+  "title": "Série temportal COVID-19 no Brasil",
+  "description": "Dados de monitoramento da pandemia COVID-19 no Brasil, fornecidos pelo Ministério da Saúde no site http://plataforma.saude.gov.br/novocoronavirus/.",
+  "homepage": "https://github.com/belisards/coronabr",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "title": "Ministério da Saúde",
+      "role": "author"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "title": "CC0 1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ]
+}
