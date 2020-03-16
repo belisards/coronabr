@@ -1,13 +1,13 @@
 # Dados sobre o coronavírus no Brasil
 
-Este script baixa os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
-acessando os dados da [Plataforma Integrada de Vigilância em Saúde (IVIS)](http://plataforma.saude.gov.br/novocoronavirus/) deste órgão. Os dados disponibilizados com formato `.js` são transformados para `.json` e então convertidos em um CSV. 
+O script (Python/Jupyter Notebook) baixa os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
+acessando os dados da [Plataforma Integrada de Vigilância em Saúde (IVIS)](http://plataforma.saude.gov.br/novocoronavirus/) deste órgão. Os dados disponibilizados dentro de um arquivo JavaScript (`.js`) são transformados para `.json` e então convertidos em um CSV. 
 
-Para facilitar a interpretação dos dados, é adicionada uma coluna, baseada no arquivo `indice.csv`, com a sigla da UF correspondente às `uid` assinaladas no banco original.
+Para facilitar a interpretação dos dados, é adicionada uma coluna, baseada no arquivo `indice.csv`, com a sigla da UF correspondente ao campo identificador (`uid`) assinalado no banco original.
 
-O arquivo é exportado com a data de execução do script. 
+O arquivo é exportado no formato CSV, com a data de execução do script. Os dados abertos podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
 
-Os dados abertos em CSV podem ser acessados diretamente pasta `dados`. Ele é composto das colunas abaixo.
+O CSV é composto das colunas abaixo:
 
 * uid = Número de identificação da UF
 * suspects = Casos suspeitos
@@ -16,11 +16,8 @@ Os dados abertos em CSV podem ser acessados diretamente pasta `dados`. Ele é co
 * deads = Mortes
 * local = Aparentemente, não é utilizada. Vide as observações.
 * cases = Casos confirmados
-* comments = Comentário sobre transmissão comunitária (Ex: "Transmissão comunitária no município do Rio de Janeiro")
+* comments = Comentário sobre os dados (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
 * broadcast = Transmissão comunitária (True/False)
 * date = Data de registro dos dados (%dd/%mm/%yyyy)
+* time = Hora do registro dos dados  (%hh:%mm)
 * uf = Coluna adicionada pelo script, com a sigla da UF
-
-
-## Observações
-Há um registro de 1 caso na coluna "refuses" na data 18/02/2020, sem estado (uid) atribuído e com o campo "local" igual a FALSE.
