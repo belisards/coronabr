@@ -13,6 +13,8 @@ Para facilitar a interpretação dos dados, é adicionada uma coluna, baseada no
 
 O arquivo é exportado no formato CSV, com a data de execução do script. 
 
+**Atenção**: Todos os dados relativos aos casos são extraídos do site do Ministério da Saúde. Não nos responsabilizamos por eventuais erros e inconsistências. Sempre confira e cheque seus dados, através do [site da IVIS]() ou caches do [Web Archive](https://web.archive.org/web/*/http://plataforma.saude.gov.br/novocoronavirus/#COVID-19-brazil).
+
 
 ## Dados abertos
 Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
@@ -79,4 +81,8 @@ python3 -m ipykernel install --user --name=coronabr
 Ao abrir o caderno Jupyter, selecione no canto superior direito o ambiente
 "`coronabr`". Isso só é necessário fazer uma única vez pois, ao salvar o
 caderno, o Jupyter se lembra de qual foi o ambiente utilizado.
+
+## Outros projetos
+
+Para um levantamento realizado manualmente de casos em nível municipal, confira este projeto de [Wesley Cota](https://labs.wesleycota.com/sarscov2/br/).
 
