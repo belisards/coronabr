@@ -18,6 +18,8 @@ O arquivo é exportado no formato CSV, com a data de execução do script.
 ## Dados abertos
 Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
 
+A licença aplicada aos dados gerados é a [Open Database License](https://opendatacommons.org/licenses/odbl/).
+
 ### Validação dos dados
 [![goodtables.io](https://goodtables.io/badge/github/belisards/coronabr.svg)](https://goodtables.io/github/belisards/coronabr)
 
