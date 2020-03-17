@@ -36,7 +36,7 @@ O CSV é composto das colunas abaixo:
 * local = Aparentemente, não é utilizada. Vide as observações.
 * cases = Casos confirmados
 * comments = Comentário sobre os dados (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
-* broadcast = Transmissão comunitária (True/False)
+* broadcast = ?
 * date = Data de registro dos dados (%dd/%mm/%yyyy)
 * time = Hora do registro dos dados  (%hh:%mm)
 * uf = Coluna adicionada pelo script, com a sigla da UF
