@@ -15,14 +15,13 @@ O arquivo é exportado no formato CSV, com a data de execução do script.
 
 **Atenção**: Todos os dados relativos aos casos são extraídos do site do Ministério da Saúde. Não nos responsabilizamos por eventuais erros e inconsistências. Sempre confira e cheque seus dados, através do [site da IVIS]() ou caches do [Web Archive](https://web.archive.org/web/*/http://plataforma.saude.gov.br/novocoronavirus/#COVID-19-brazil).
 
-
 ## Dados abertos
 Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
 
 ### Validação dos dados
-É possível realizar a validação contínua dos dados extraídos através do Goodtables. Atualmente, por exemplo, existem 15 registros duplicados.
-
 [![goodtables.io](https://goodtables.io/badge/github/belisards/coronabr.svg)](https://goodtables.io/github/belisards/coronabr)
+
+É possível realizar a validação contínua dos dados extraídos através do [Goodtables](https://goodtables.io/github/belisards/coronabr). No dia 16 de março, por exemplo, existiam 15 registros duplicados.
 
 ### Colunas
 O CSV é composto das colunas abaixo:
@@ -83,6 +82,8 @@ Ao abrir o caderno Jupyter, selecione no canto superior direito o ambiente
 caderno, o Jupyter se lembra de qual foi o ambiente utilizado.
 
 ## Outros projetos
+
+O mesmo dataset da plataforma IVIS encontra-se disponível neste [repositório do Kaggle](https://www.kaggle.com/unanimad/corona-virus-brazil).
 
 Para um levantamento realizado manualmente de casos em nível municipal, confira este projeto de [Wesley Cota](https://labs.wesleycota.com/sarscov2/br/).
 
