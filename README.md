@@ -80,7 +80,7 @@ Ao abrir o caderno Jupyter, selecione no canto superior direito o ambiente
 caderno, o Jupyter se lembra de qual foi o ambiente utilizado.
 
 ## Dados abertos
-Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). A pasta não é atualizada automaticamente. Se você quer acesso ao arquivo CSV com a (última série histórica atualizada)[https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv].
+Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). A atualização dos dados foi descontinuada. Se você quer acesso ao arquivo CSV com a [última série histórica atualizada](https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv).
 
 ### Colunas
 O CSV é composto das colunas abaixo:
