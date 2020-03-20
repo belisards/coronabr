@@ -7,7 +7,9 @@ Ministério da Saúde no site
 Os scripts baixam os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
 acessando os dados da [Plataforma Integrada de Vigilância em Saúde (IVIS)](http://plataforma.saude.gov.br/novocoronavirus/) deste órgão. Através da interface do site disponibilizada ao usuário, só é possível ter acesso aos dados do dia atual.
 
-O projeto original foi baseado em Python/Jupyter Notebook. Posteriormente, foi adiciona uma pasta com um código em R elaborado por Júlio Trecenti, que executa a mesma função. **Se você quer apenas acesso ao arquivo CSV com a (última série histórica atualizada, confira este repositório do Júlio Trecenti)[https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv], que é atualizado de hora em hora automaticamente.**
+O projeto original foi baseado em Python/Jupyter Notebook. Posteriormente, foi adiciona uma pasta com um código em R elaborado por Júlio Trecenti, que executa a mesma função. 
+
+**Para acessar o arquivo CSV com a última série histórica atualizada, confira este [repositório do Júlio Trecenti](https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv), que é atualizado de hora em hora automaticamente.**
 
 ## Como funciona
 
