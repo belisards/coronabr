@@ -31,7 +31,7 @@ O arquivo é exportado no formato CSV, com a data de execução do script.
 * Script para extrair os dados do IVIS em [R, por Júlio Trecenti](https://gist.github.com/jtrecenti/9ed617e060c2b01cfe9cce32577bf9b5)
 
 ### Outras bases de dados
-* Painel e projetções do [Observatório COVID-19 BR](https://covid19br.github.io/)
+* Painel e projeções do [Observatório COVID-19 BR](https://covid19br.github.io/)
 
 * Kaggle Corona-Virus-Brazil: o mesmo dataset da plataforma IVIS encontra-se disponível neste [repositório do Kaggle](https://www.kaggle.com/unanimad/corona-virus-brazil).
 
