@@ -4,9 +4,14 @@ Ministério da Saúde no site
 
 # Extrator de dados históricos do coronavírus no Brasil
 
-O script (Python/Jupyter Notebook) baixa os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
+Os scripts baixam os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
 acessando os dados da [Plataforma Integrada de Vigilância em Saúde (IVIS)](http://plataforma.saude.gov.br/novocoronavirus/) deste órgão. Através da interface do site disponibilizada ao usuário, só é possível ter acesso aos dados do dia atual.
 
+O projeto original foi baseado em Python/Jupyter Notebook. Posteriormente, foi adiciona uma pasta com um código em R elaborado por Júlio Trecenti, que executa a mesma função. **Se você quer apenas acesso ao arquivo CSV com a (última série histórica atualizada, confira este repositório do Júlio Trecenti)[https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv], que é atualizado de hora em hora automaticamente.**
+
+## Como funciona
+
+### Script em Python
 Os dados são armazenados dentro de um arquivo JavaScript (`.js`). O script os transforma para `.json` e então converte em um CSV. 
 
 Para facilitar a interpretação dos dados, é adicionada uma coluna, baseada no arquivo `indice.csv`, com a sigla da UF correspondente ao campo identificador (`uid`) assinalado no banco original.
@@ -15,35 +20,23 @@ O arquivo é exportado no formato CSV, com a data de execução do script.
 
 **Atenção**: Todos os dados relativos aos casos são extraídos do site do Ministério da Saúde. Não nos responsabilizamos por eventuais erros e inconsistências. Sempre confira e cheque seus dados, através do [site da IVIS]() ou caches do [Web Archive](https://web.archive.org/web/*/http://plataforma.saude.gov.br/novocoronavirus/#COVID-19-brazil).
 
-## Dados abertos
-Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
+## Outros projetos
 
-### Licença dos dados
-A base de dados `corona-br` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
+### Projetos de raspagem em R
 
-### Validação dos dados
-[![goodtables.io](https://goodtables.io/badge/github/belisards/coronabr.svg)](https://goodtables.io/github/belisards/coronabr)
+* [Pacote R para extrair as informações do IVIS](https://liibre.github.io/coronabr/articles/coronabr.html), por Sara Mortara e Andrea Sánchez-Tapia.
 
-É possível realizar a validação contínua dos dados extraídos através do [Goodtables](https://goodtables.io/github/belisards/coronabr). No dia 16 de março, por exemplo, existiam 15 registros duplicados.
+* Script para extrair os dados do IVIS em [R, por Júlio Trecenti](https://gist.github.com/jtrecenti/9ed617e060c2b01cfe9cce32577bf9b5)
 
-### Colunas
-O CSV é composto das colunas abaixo:
+### Outras bases de dados
+* Painel e projetções do [Observatório COVID-19 BR](https://covid19br.github.io/)
 
-* uid = Número de identificação da UF
-* suspects = Casos suspeitos
-* refuses = Descartados
-* confirmado = A coluna não é utilizada até o momento
-* deads = Mortes
-* local = Aparentemente, não é utilizada. Vide as observações.
-* cases = Casos confirmados
-* comments = Comentário sobre os dados (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
-* broadcast = ?
-* date = Data de registro dos dados (%dd/%mm/%yyyy)
-* time = Hora do registro dos dados  (%hh:%mm)
-* uf = Coluna adicionada pelo script, com a sigla da UF
+* Kaggle Corona-Virus-Brazil: o mesmo dataset da plataforma IVIS encontra-se disponível neste [repositório do Kaggle](https://www.kaggle.com/unanimad/corona-virus-brazil).
+
+* Para um levantamento realizado manualmente de casos em nível municipal, confira este projeto de [Wesley Cota](https://labs.wesleycota.com/sarscov2/br/) ou a iniciativa colaborativa [Mapa do Corona Virus](mapadocoronavirus.com).
 
 
-## Instalando as dependências 
+## Executando o script em Python
 
 Dentro da pasta do projeto, crie um abiente virtual com o comando
 
@@ -84,17 +77,25 @@ Ao abrir o caderno Jupyter, selecione no canto superior direito o ambiente
 "`coronabr`". Isso só é necessário fazer uma única vez pois, ao salvar o
 caderno, o Jupyter se lembra de qual foi o ambiente utilizado.
 
-## Outros projetos
+## Dados abertos
+Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). A pasta não é atualizada automaticamente. Se você quer acesso ao arquivo CSV com a (última série histórica atualizada)[https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv].
 
-### Projetos em R
+### Colunas
+O CSV é composto das colunas abaixo:
 
-* [Pacote R para extrair as informações do IVIS](https://liibre.github.io/coronabr/articles/coronabr.html), por Sara Mortara e Andrea Sánchez-Tapia.
+* uid = Número de identificação da UF
+* suspects = Casos suspeitos
+* refuses = Descartados
+* confirmado = A coluna não é utilizada até o momento
+* deads = Mortes
+* local = Aparentemente, não é utilizada. Vide as observações.
+* cases = Casos confirmados
+* comments = Comentário sobre os dados (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
+* broadcast = ?
+* date = Data de registro dos dados (%dd/%mm/%yyyy)
+* time = Hora do registro dos dados  (%hh:%mm)
+* uf = Coluna adicionada pelo script, com a sigla da UF
 
-* Script para extrair os dados do IVIS em [R, por Júlio Trecenti](https://gist.github.com/jtrecenti/9ed617e060c2b01cfe9cce32577bf9b5)
 
-### Outras bases de dados
-
-* Kaggle Corona-Virus-Brazil: o mesmo dataset da plataforma IVIS encontra-se disponível neste [repositório do Kaggle](https://www.kaggle.com/unanimad/corona-virus-brazil).
-
-* Para um levantamento realizado manualmente de casos em nível municipal, confira este projeto de [Wesley Cota](https://labs.wesleycota.com/sarscov2/br/) ou a iniciativa colaborativa [Mapa do Corona Virus](mapadocoronavirus.com).
-
+### Licença dos dados
+A base de dados `corona-br` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
