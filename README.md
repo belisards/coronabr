@@ -33,7 +33,7 @@ O arquivo é exportado no formato CSV, com a data de execução do script.
 ### Outras bases de dados
 * Painel e projeções do [Observatório COVID-19 BR](https://covid19br.github.io/)
 
-* O [Brasil.IO](https://brasil.io/dataset/covid19/boletim) está consolidando uma basse de dados com os boletins informativos sobre COVID-19 no Brasil.
+* O [Brasil.IO](https://brasil.io/dataset/covid19/boletim) está consolidando uma base de dados com os boletins informativos sobre COVID-19 no Brasil.
 
 * Kaggle Corona-Virus-Brazil: o mesmo dataset da plataforma IVIS encontra-se disponível neste [repositório do Kaggle](https://www.kaggle.com/unanimad/corona-virus-brazil).
 
