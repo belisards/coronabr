@@ -3,7 +3,7 @@ Ministério da Saúde no site da plataforma IVIS:
 [http://plataforma.saude.gov.br/novocoronavirus/](http://plataforma.saude.gov.br/novocoronavirus/).
 
 # Atenção
-## Nota sobre o projeto 20/03
+## Nota sobre os dados do Ministério da Saúde com a série histórica da COVID no Brasil (20/03)
 Desde quarta, dia 18/03/2020, o Ministério da Saúde não atualiza os dados sobre casos de coronavírus na plataforma IVIS e, mais recentemente, toda plataforma e o banco de dados foi removido do ar. Portanto, no momento, nenhum script de extração é operacional.
 
 Os dados dos dias 19, 20 e 21 de março foram então disponiblizados por meio de apresentações:
