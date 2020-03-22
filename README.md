@@ -14,11 +14,11 @@ Os dados dos dias 19, 20 e 21 de março foram então disponiblizados por meio de
 
 * Dia 21/03/2020: [https://bit.ly/corona21mar20](https://bit.ly/corona21mar20)
 
-Os arquivos em PDF foram baixados neste repositório, a fim de preservar e facilitar a checagem dos dados.
+* Dia 22/03/2020: o PDF encontra-se na pasta. Link oficial em breve.
 
-Diante deste novo cenário, os dados dos dias 19, 20 e 21 de março foram incluídos MANUALMENTE no arquivo CSV `corona_brasil.csv` disponível na pasta `dados`, a fim de disponibilizar a série histórica atualizada, enquanto nova solução não é encaminhada pelo Ministério da Saúde. 
+Os arquivos em PDF foram baixados neste repositório, a fim de preservar e facilitar a checagem dos dados. Sempre cheque as informações!
 
-O autor do repositório não se responsabiliza por eventuais imprecisões nos dados, sempre cheque as informações.
+Diante deste novo cenário, os dados dos dias 19, 20 e 21 de março foram **incluídos MANUALMENTE** no arquivo CSV `corona_brasil.csv` disponível na pasta `dados`, a fim de disponibilizar a série histórica atualizada, enquanto nova solução não é encaminhada pelo Ministério da Saúde.  Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github.
 
 # Extrator de dados históricos do coronavírus no Brasil
 
