@@ -20,6 +20,31 @@ Diante deste novo cenário, os dados dos dias 19, 20 e 21 de março foram inclu�
 
 O autor do repositório não se responsabiliza por eventuais imprecisões nos dados, sempre cheque as informações.
 
+
+## Dados abertos
+Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
+
+### Colunas
+O CSV é composto das colunas abaixo:
+
+* uid = Número de identificação da UF
+* suspects = Casos suspeitos
+* refuses = Descartados
+* confirmado = A coluna não é utilizada até o momento
+* deads = Mortes
+* local = Aparentemente, não é utilizada. Vide as observações.
+* cases = Casos confirmados
+* comments = Comentário sobre os dados (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
+* broadcast = ?
+* date = Data de registro dos dados (%dd/%mm/%yyyy)
+* time = Hora do registro dos dados  (%hh:%mm)
+* uf = A coluna NÃO CONSTAVA no registro do Ministério da Saúde, sendo adicionada pelo script, com a sigla da UF
+
+
+### Licença dos dados
+A base de dados `corona-br` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
+
+
 # Extrator de dados históricos do coronavírus no Brasil
 
 Os scripts baixam os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
@@ -98,26 +123,3 @@ python3 -m ipykernel install --user --name=coronabr
 Ao abrir o caderno Jupyter, selecione no canto superior direito o ambiente
 "`coronabr`". Isso só é necessário fazer uma única vez pois, ao salvar o
 caderno, o Jupyter se lembra de qual foi o ambiente utilizado.
-
-## Dados abertos
-Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). A atualização dos dados foi descontinuada. Se você quer acesso ao arquivo CSV com a [última série histórica atualizada](https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv).
-
-### Colunas
-O CSV é composto das colunas abaixo:
-
-* uid = Número de identificação da UF
-* suspects = Casos suspeitos
-* refuses = Descartados
-* confirmado = A coluna não é utilizada até o momento
-* deads = Mortes
-* local = Aparentemente, não é utilizada. Vide as observações.
-* cases = Casos confirmados
-* comments = Comentário sobre os dados (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
-* broadcast = ?
-* date = Data de registro dos dados (%dd/%mm/%yyyy)
-* time = Hora do registro dos dados  (%hh:%mm)
-* uf = Coluna adicionada pelo script, com a sigla da UF
-
-
-### Licença dos dados
-A base de dados `corona-br` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
