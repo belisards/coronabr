@@ -3,7 +3,7 @@ Ministério da Saúde no site da plataforma IVIS:
 [http://plataforma.saude.gov.br/novocoronavirus/](http://plataforma.saude.gov.br/novocoronavirus/).
 
 # Atenção
-## Nota sobre o projeto 20/03
+## Nota sobre os dados do Ministério da Saúde com a série histórica da COVID no Brasil (20/03)
 Desde quarta, dia 18/03/2020, o Ministério da Saúde não atualiza os dados sobre casos de coronavírus na plataforma IVIS e, mais recentemente, toda plataforma e o banco de dados foi removido do ar. Portanto, no momento, nenhum script de extração é operacional.
 
 Os dados dos dias 19, 20 e 21 de março foram então disponiblizados por meio de apresentações:
@@ -19,6 +19,31 @@ Os dados dos dias 19, 20 e 21 de março foram então disponiblizados por meio de
 Os arquivos em PDF foram baixados neste repositório, a fim de preservar e facilitar a checagem dos dados. Sempre cheque as informações!
 
 Diante deste novo cenário, os dados dos dias 19, 20 e 21 de março foram **incluídos MANUALMENTE** no arquivo CSV `corona_brasil.csv` disponível na pasta `dados`, a fim de disponibilizar a série histórica atualizada, enquanto nova solução não é encaminhada pelo Ministério da Saúde.  Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github.
+
+
+## Dados abertos
+Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
+
+### Colunas
+O CSV é composto das colunas abaixo:
+
+* uid = Número de identificação da UF
+* suspects = Casos suspeitos
+* refuses = Descartados
+* confirmado = A coluna não é utilizada até o momento
+* deads = Mortes
+* local = Aparentemente, não é utilizada. Vide as observações.
+* cases = Casos confirmados
+* comments = Comentário sobre os dados (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
+* broadcast = ?
+* date = Data de registro dos dados (%dd/%mm/%yyyy)
+* time = Hora do registro dos dados  (%hh:%mm)
+* uf = A coluna NÃO CONSTAVA no registro do Ministério da Saúde, sendo adicionada pelo script, com a sigla da UF
+
+
+### Licença dos dados
+A base de dados `corona-br` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
+
 
 # Extrator de dados históricos do coronavírus no Brasil
 
@@ -98,26 +123,3 @@ python3 -m ipykernel install --user --name=coronabr
 Ao abrir o caderno Jupyter, selecione no canto superior direito o ambiente
 "`coronabr`". Isso só é necessário fazer uma única vez pois, ao salvar o
 caderno, o Jupyter se lembra de qual foi o ambiente utilizado.
-
-## Dados abertos
-Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). A atualização dos dados foi descontinuada. Se você quer acesso ao arquivo CSV com a [última série histórica atualizada](https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv).
-
-### Colunas
-O CSV é composto das colunas abaixo:
-
-* uid = Número de identificação da UF
-* suspects = Casos suspeitos
-* refuses = Descartados
-* confirmado = A coluna não é utilizada até o momento
-* deads = Mortes
-* local = Aparentemente, não é utilizada. Vide as observações.
-* cases = Casos confirmados
-* comments = Comentário sobre os dados (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
-* broadcast = ?
-* date = Data de registro dos dados (%dd/%mm/%yyyy)
-* time = Hora do registro dos dados  (%hh:%mm)
-* uf = Coluna adicionada pelo script, com a sigla da UF
-
-
-### Licença dos dados
-A base de dados `corona-br` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
