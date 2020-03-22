@@ -1,6 +1,24 @@
 Dados de monitoramento da pandemia COVID-19 no Brasil, fornecidos pelo
-Ministério da Saúde no site
+Ministério da Saúde no site da plataforma IVIS:
 [http://plataforma.saude.gov.br/novocoronavirus/](http://plataforma.saude.gov.br/novocoronavirus/).
+
+# Atenção
+## Nota sobre o projeto 20/03
+Desde quarta, dia 18/03/2020, o Ministério da Saúde não atualiza os dados sobre casos de coronavírus na plataforma IVIS e, mais recentemente, toda plataforma e o banco de dados foi removido do ar. Portanto, no momento, nenhum script de extração é operacional.
+
+Os dados dos dias 19, 20 e 21 de março foram então disponiblizados por meio de apresentações:
+
+* Dia 19/03/2020: [https://bit.ly/corona19mar20](https://bit.ly/corona19mar20)
+
+* Dia 20/03/2020: [https://bit.ly/corona20mar20](https://bit.ly/corona20mar20)
+
+* Dia 21/03/2020: [https://bit.ly/corona21mar20](https://bit.ly/corona21mar20)
+
+Os arquivos em PDF foram baixados neste repositório, a fim de preservar e facilitar a checagem dos dados.
+
+Diante deste novo cenário, os dados dos dias 19, 20 e 21 de março foram incluídos MANUALMENTE no arquivo CSV `corona_brasil.csv` disponível na pasta `dados`, a fim de disponibilizar a série histórica atualizada, enquanto nova solução não é encaminhada pelo Ministério da Saúde. 
+
+O autor do repositório não se responsabiliza por eventuais imprecisões nos dados, sempre cheque as informações.
 
 # Extrator de dados históricos do coronavírus no Brasil
 
