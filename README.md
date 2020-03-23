@@ -5,20 +5,9 @@ Ministério da Saúde [plataforma IVIS*](http://plataforma.saude.gov.br/novocoro
 ## Sobre a atualização dos dados
 Desde quarta, dia 18/03/2020, o Ministério da Saúde não atualiza os dados sobre casos de coronavírus na plataforma IVIS e, mais recentemente, toda plataforma e o banco de dados foi removido do ar. Portanto, no momento, nenhum script de extração é operacional.
 
-Os dados foram então disponiblizados por meio de apresentações:
+Desde então, os dados passaram a ser disponibilizados através de apresentações e posts no blog do Ministério da Saúde. O link para os materiais estão disponíveis, organizados por dia, na pasta `dados\auxiliares\link_minsaude.csv`.
 
-* Dia 19/03/2020: [https://bit.ly/corona19mar20](https://bit.ly/corona19mar20)
-
-* Dia 20/03/2020: [https://bit.ly/corona20mar20](https://bit.ly/corona20mar20)
-
-* Dia 21/03/2020: [https://bit.ly/corona21mar20](https://bit.ly/corona21mar20)
-
-* Dia 22/03/2020: o PDF encontra-se na pasta. Link oficial em breve.
-
-Os arquivos em PDF foram baixados neste repositório, a fim de preservar e facilitar a checagem dos dados. Sempre cheque as informações!
-
-Diante deste novo cenário, os dados dos dias 19, 20 e 21 de março foram **incluídos MANUALMENTE** no arquivo CSV `corona_brasil.csv` disponível na pasta `dados`, a fim de disponibilizar a série histórica atualizada, enquanto nova solução não é encaminhada pelo Ministério da Saúde.  Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github.
-
+A partir do dia 19, então, os dados passaram a ser atualizados **MANUALMENTE** no arquivo CSV `corona_brasil.csv` disponível na pasta `dados`, a fim de disponibilizar a série histórica atualizada, enquanto nova solução não é encaminhada pelo Ministério da Saúde.  Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github. 
 
 ## Dados abertos
 Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
