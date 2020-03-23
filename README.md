@@ -1,12 +1,12 @@
+# CoronaBR
 Dados de monitoramento da pandemia COVID-19 no Brasil, fornecidos pelo
-Ministério da Saúde no site da plataforma IVIS:
+Ministério da Saúde no site da plataforma IVIS*:
 [http://plataforma.saude.gov.br/novocoronavirus/](http://plataforma.saude.gov.br/novocoronavirus/).
 
-# Atenção
-## Nota sobre os dados do Ministério da Saúde com a série histórica da COVID no Brasil (20/03)
+## * Nota sobre os dados do Ministério da Saúde com a série histórica da COVID no Brasil (20/03)
 Desde quarta, dia 18/03/2020, o Ministério da Saúde não atualiza os dados sobre casos de coronavírus na plataforma IVIS e, mais recentemente, toda plataforma e o banco de dados foi removido do ar. Portanto, no momento, nenhum script de extração é operacional.
 
-Os dados dos dias 19, 20 e 21 de março foram então disponiblizados por meio de apresentações:
+Os dados foram então disponiblizados por meio de apresentações:
 
 * Dia 19/03/2020: [https://bit.ly/corona19mar20](https://bit.ly/corona19mar20)
 
@@ -74,6 +74,8 @@ O arquivo é exportado no formato CSV, com a data de execução do script.
 * Script para extrair os dados do IVIS em [R, por Júlio Trecenti](https://gist.github.com/jtrecenti/9ed617e060c2b01cfe9cce32577bf9b5)
 
 ### Outras bases de dados
+* Lista colaborativa no [fórum Dados Abertos](https://dadosabertos.social/t/dados-sobre-a-pandemia-do-novo-coronavirus/267);
+
 * Painel e projeções do [Observatório COVID-19 BR](https://covid19br.github.io/)
 
 * O [Brasil.IO](https://brasil.io/dataset/covid19/boletim) está consolidando uma base de dados com os boletins informativos sobre COVID-19 no Brasil.
