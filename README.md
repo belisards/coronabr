@@ -33,26 +33,6 @@ O CSV é composto das colunas abaixo:
 A base de dados `corona-br` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
 
 
-# Extrator de dados históricos do coronavírus no Brasil
-
-Os scripts baixam os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
-acessando os dados da [Plataforma Integrada de Vigilância em Saúde (IVIS)](http://plataforma.saude.gov.br/novocoronavirus/) deste órgão. Através da interface do site disponibilizada ao usuário, só é possível ter acesso aos dados do dia atual.
-
-O projeto original foi baseado em Python/Jupyter Notebook. Posteriormente, foi adiciona uma pasta com um código em R elaborado por Júlio Trecenti, que executa a mesma função. 
-
-**Para acessar o arquivo CSV com a última série histórica atualizada, confira este [repositório do Júlio Trecenti](https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv), que é atualizado de hora em hora automaticamente.**
-
-## Como funciona
-
-### Script em Python
-Os dados são armazenados dentro de um arquivo JavaScript (`.js`). O script os transforma para `.json` e então converte em um CSV. 
-
-Para facilitar a interpretação dos dados, é adicionada uma coluna, baseada no arquivo `indice.csv`, com a sigla da UF correspondente ao campo identificador (`uid`) assinalado no banco original.
-
-O arquivo é exportado no formato CSV, com a data de execução do script. 
-
-**Atenção**: Todos os dados relativos aos casos são extraídos do site do Ministério da Saúde. Não nos responsabilizamos por eventuais erros e inconsistências. Sempre confira e cheque seus dados, através do [site da IVIS]() ou caches do [Web Archive](https://web.archive.org/web/*/http://plataforma.saude.gov.br/novocoronavirus/#COVID-19-brazil).
-
 ## Outros projetos
 
 ### Projetos de raspagem em R
@@ -72,6 +52,27 @@ O arquivo é exportado no formato CSV, com a data de execução do script.
 
 * Para um levantamento realizado manualmente de casos em nível municipal, confira este projeto de [Wesley Cota](https://labs.wesleycota.com/sarscov2/br/) ou a iniciativa colaborativa [Mapa do Corona Virus](mapadocoronavirus.com).
 
+
+
+# Extrator de dados históricos do coronavírus no Brasil
+
+Os scripts baixam os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
+acessando os dados da [Plataforma Integrada de Vigilância em Saúde (IVIS)](http://plataforma.saude.gov.br/novocoronavirus/) deste órgão. Através da interface do site disponibilizada ao usuário, só é possível ter acesso aos dados do dia atual.
+
+O projeto original foi baseado em Python/Jupyter Notebook. Posteriormente, foi adiciona uma pasta com um código em R elaborado por Júlio Trecenti, que executa a mesma função. 
+
+**Para acessar o arquivo CSV com a última série histórica atualizada, confira este [repositório do Júlio Trecenti](https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv), que é atualizado de hora em hora automaticamente.**
+
+## Como funciona
+
+### Script em Python
+Os dados são armazenados dentro de um arquivo JavaScript (`.js`). O script os transforma para `.json` e então converte em um CSV. 
+
+Para facilitar a interpretação dos dados, é adicionada uma coluna, baseada no arquivo `indice.csv`, com a sigla da UF correspondente ao campo identificador (`uid`) assinalado no banco original.
+
+O arquivo é exportado no formato CSV, com a data de execução do script. 
+
+**Atenção**: Todos os dados relativos aos casos são extraídos do site do Ministério da Saúde. Não nos responsabilizamos por eventuais erros e inconsistências. Sempre confira e cheque seus dados, através do [site da IVIS]() ou caches do [Web Archive](https://web.archive.org/web/*/http://plataforma.saude.gov.br/novocoronavirus/#COVID-19-brazil).
 
 ## Executando o script em Python
 
