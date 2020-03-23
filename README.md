@@ -7,10 +7,7 @@ Desde quarta, dia 18/03/2020, o Ministério da Saúde não atualiza os dados sob
 
 Desde então, os dados passaram a ser disponibilizados através de apresentações e posts no blog do Ministério da Saúde. O link para os materiais estão disponíveis, organizados por dia, na pasta `dados\auxiliares\link_minsaude.csv`.
 
-A partir do dia 19, então, os dados passaram a ser atualizados **MANUALMENTE** no arquivo CSV `corona_brasil.csv` disponível na pasta `dados`, a fim de disponibilizar a série histórica atualizada, enquanto nova solução não é encaminhada pelo Ministério da Saúde.  Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github. 
-
-## Dados abertos
-Os dados em formato aberto podem ser acessados [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados). 
+A partir do dia 19, então, os dados passaram a ser atualizados **MANUALMENTE** no arquivo CSV `corona_brasil.csv` disponível [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados), a fim de disponibilizar a série histórica atualizada, enquanto nova solução não é encaminhada pelo Ministério da Saúde.  Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github. 
 
 ### Colunas
 O CSV é composto das colunas abaixo:
