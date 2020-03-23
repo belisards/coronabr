@@ -1,9 +1,8 @@
 # CoronaBR
-Dados de monitoramento da pandemia COVID-19 no Brasil, fornecidos pelo
-Ministério da Saúde no site da plataforma IVIS*:
-[http://plataforma.saude.gov.br/novocoronavirus/](http://plataforma.saude.gov.br/novocoronavirus/).
+Dados e scripts da série histórica da pandemia COVID-19 no Brasil, de acordo com o
+Ministério da Saúde [plataforma IVIS*](http://plataforma.saude.gov.br/novocoronavirus/).
 
-## * Nota sobre os dados do Ministério da Saúde com a série histórica da COVID no Brasil (20/03)
+## Sobre a atualização dos dados
 Desde quarta, dia 18/03/2020, o Ministério da Saúde não atualiza os dados sobre casos de coronavírus na plataforma IVIS e, mais recentemente, toda plataforma e o banco de dados foi removido do ar. Portanto, no momento, nenhum script de extração é operacional.
 
 Os dados foram então disponiblizados por meio de apresentações:
