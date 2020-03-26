@@ -34,13 +34,6 @@ O script disponibilizado hoje automatiza a extração dos dados destes boletins 
 
 Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github. Sinta-se à vontade para contribuir com a melhoria do código ou desenvolvimento de novas funcionalidades por meio de Pull Requests.
 
-## A fazer
-
-* Automatizar a extração dos dados identificando o link do dia na [planilha adequada](https://github.com/belisards/coronabr/blob/master/dados/auxiliares/link_minsaude.csv
-
-* Automatizar a execução do script e commit do CSV atualizado
-
-
 ### Licença dos dados
 A base de dados `corona-br` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
 
