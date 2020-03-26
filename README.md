@@ -4,7 +4,7 @@ Dados e scripts para extrair a série histórica da pandemia COVID-19 no Brasil,
 
 ## Sobre os dados
 
-No arquivo [corona_brasil.csv], você encontra a série histórica dos casos de COVID-19 segundo o Ministério da Saúde, desde de 30 janeiro de 2020. Saiba mais sobre a metodologia de extração e compilação dos dados abaixo.
+No arquivo [corona_brasil.csv](https://github.com/belisards/coronabr/blob/master/dados/corona_brasil.csv), você encontra a série histórica dos casos de COVID-19 segundo o Ministério da Saúde, desde de 30 janeiro de 2020. Saiba mais sobre a metodologia de extração e compilação dos dados abaixo.
 
 ## Como interpretar os dados?
 
