@@ -1,29 +1,44 @@
 # CoronaBR
-Dados e scripts da série histórica da pandemia COVID-19 no Brasil, de acordo com o
-Ministério da Saúde.
 
-## Sobre a atualização dos dados
-Desde quarta, dia 18/03/2020, o Ministério da Saúde não atualiza os dados sobre casos de coronavírus na [plataforma IVIS*](http://plataforma.saude.gov.br/novocoronavirus/) e, mais recentemente, toda plataforma e o banco de dados foi removido do ar. Portanto, no momento, nenhum script de extração é operacional.
+Dados e scripts para extrair a série histórica da pandemia COVID-19 no Brasil, de acordo com o Ministério da Saúde.
 
-Desde então, os dados passaram a ser disponibilizados através de apresentações e posts no blog do Ministério da Saúde. O link para os materiais estão disponíveis, organizados por dia, na pasta `dados\auxiliares\link_minsaude.csv`.
+## Sobre os dados
 
-A partir do dia 19, então, os dados passaram a ser atualizados **MANUALMENTE** no arquivo CSV `corona_brasil.csv` disponível [na pasta `dados`](https://github.com/belisards/coronabr/tree/master/dados), a fim de disponibilizar a série histórica atualizada, enquanto nova solução não é encaminhada pelo Ministério da Saúde.  Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github. 
+No arquivo [corona_brasil.csv], você encontra a série histórica dos casos de COVID-19 segundo o Ministério da Saúde, desde de 30 janeiro de 2020. Saiba mais sobre a metodologia de extração e compilação dos dados abaixo.
 
-### Colunas
-O CSV é composto das colunas abaixo:
+## Como interpretar os dados?
 
-* uid = Número de identificação da UF
+A tabela é baseada no formato originalmente adotado pelo Ministério da Saúde para armazenas os dados da COVID-19 na Plataforma Integrada de Vigilância em Saúde. Atualmente, porém, o órgão disponibiliza apenas números de óbitos e casos confirmados. 
+
+* uid = Número de identificação da UF adotado pela Plataforma IVIS. 
 * suspects = Casos suspeitos
 * refuses = Descartados
-* confirmado = A coluna não é utilizada até o momento
-* deads = Mortes
-* local = Aparentemente, não é utilizada. Vide as observações.
+* confirmado = A coluna parece nunca ter sido utilizada.
+* deads = Mortes/Óbitos
+* local = A coluna parece nunca ter sido utilizada.
 * cases = Casos confirmados
-* comments = Comentário sobre os dados (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
-* broadcast = ?
+* comments = Comentário sobre os dados adicionados na Plataforma IVIS (Ex: "Transmissão comunitária no município do Rio de Janeiro" ou "1 Portador assintomático")
+* broadcast = Coluna não identificada.
 * date = Data de registro dos dados (%dd/%mm/%yyyy)
-* time = Hora do registro dos dados  (%hh:%mm)
-* uf = A coluna NÃO CONSTAVA no registro do Ministério da Saúde, sendo adicionada pelo script, com a sigla da UF
+* time = Hora do registro dos dados  (%hh:%mm), quando eram atualizados na Plataforma IVIS
+* uf = Coluna com a sigla da UF
+
+
+## Sobre a coleta dos dados
+
+O projeto foi iniciado em meados de março, disponibilizando um script e a série histórica dos casos de coronavírus (COVID-19). Os dados não eram mostrados diretamente ao público, mas estavam disponíveis no servidor da Plataforma Integrada de Vigilância em Saúde (IVIS). Através da antiga interface - hoje já fora do ar - e do [site atual sobre os casos de coronavírus](https://covid.saude.gov.br/) só é possível disponibilizar números totais. Ao contrário da interface antiga, a atual sequer oferece o detalhamento de óbitos por estado ou opção de download dos dados em CSV.
+
+Entre o dia 18/03/2020 e dia 26/03/2020, os dados foram atualizados unicamente por meio de tabelas disponíveis nos [comunicados no blog do Ministério da Saúde](https://github.com/belisards/coronabr/blob/master/dados/auxiliares/link_minsaude.csv) e, até o dia 25/03, a inserção foi feita manualmente, contando com uma verificação em pares para checagem. 
+
+O script disponibilizado hoje automatiza a extração dos dados destes boletins - e não da plataforma, uma vez que ali não encontramos os dados completos e formatos tabulares. O script também concilia estes dados com a série histórica disponibilizada anteriormente.
+
+Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github. Sinta-se à vontade para contribuir com a melhoria do código ou desenvolvimento de novas funcionalidades por meio de Pull Requests.
+
+## A fazer
+
+* Automatizar a extração dos dados identificando o link do dia na [planilha adequada](https://github.com/belisards/coronabr/blob/master/dados/auxiliares/link_minsaude.csv
+
+* Automatizar a execução do script e commit do CSV atualizado
 
 
 ### Licença dos dados
@@ -48,66 +63,3 @@ A base de dados `corona-br` é disponibilizada sob a licença Open Database Lice
 * Kaggle Corona-Virus-Brazil: o mesmo dataset da plataforma IVIS encontra-se disponível neste [repositório do Kaggle](https://www.kaggle.com/unanimad/corona-virus-brazil).
 
 * Para um levantamento realizado manualmente de casos em nível municipal, confira este projeto de [Wesley Cota](https://labs.wesleycota.com/sarscov2/br/) ou a iniciativa colaborativa [Mapa do Corona Virus](mapadocoronavirus.com).
-
-
-
-# Extrator de dados históricos do coronavírus no Brasil
-
-Os scripts baixam os dados com a série histórica do Ministério de Saúde das informações relativas ao coronavírus no Brasil. Isto é feito
-acessando os dados da [Plataforma Integrada de Vigilância em Saúde (IVIS)](http://plataforma.saude.gov.br/novocoronavirus/) deste órgão. Através da interface do site disponibilizada ao usuário, só é possível ter acesso aos dados do dia atual.
-
-O projeto original foi baseado em Python/Jupyter Notebook. Posteriormente, foi adiciona uma pasta com um código em R elaborado por Júlio Trecenti, que executa a mesma função. 
-
-**Para acessar o arquivo CSV com a última série histórica atualizada, confira este [repositório do Júlio Trecenti](https://github.com/jtrecenti/corona/blob/master/corona-msaude.csv), que é atualizado de hora em hora automaticamente.**
-
-## Como funciona
-
-### Script em Python
-Os dados são armazenados dentro de um arquivo JavaScript (`.js`). O script os transforma para `.json` e então converte em um CSV. 
-
-Para facilitar a interpretação dos dados, é adicionada uma coluna, baseada no arquivo `indice.csv`, com a sigla da UF correspondente ao campo identificador (`uid`) assinalado no banco original.
-
-O arquivo é exportado no formato CSV, com a data de execução do script. 
-
-**Atenção**: Todos os dados relativos aos casos são extraídos do site do Ministério da Saúde. Não nos responsabilizamos por eventuais erros e inconsistências. Sempre confira e cheque seus dados, através do [site da IVIS]() ou caches do [Web Archive](https://web.archive.org/web/*/http://plataforma.saude.gov.br/novocoronavirus/#COVID-19-brazil).
-
-## Executando o script em Python
-
-Dentro da pasta do projeto, crie um abiente virtual com o comando
-
-```
-python3 -m venv env
-```
-
-Ative o ambiente virtual:
-
-```
-source env/bin/activate
-```
-
-Instale as dependências no seu ambiente Python usando o comando
-
-```
-pip install -r scripts/IVIScraper/requirements.txt
-```
-
-Só é necessário fazer isso uma única vez, exceto se o arquivo
-`requirements.txt` for alterado.
-
-### Incluindo o ambiente virtual no Jupyter
-
-Com o ambiente virtual ativo (veja os passos acima), instale o pacote `ipykernel`:
-
-```
-pip install -U ipykernel
-```
-
-Em seguida, instale o seu ambiente virtual no Jupyter:
-
-```
-python3 -m ipykernel install --user --name=coronabr
-```
-
-Ao abrir o caderno Jupyter, selecione no canto superior direito o ambiente
-"`coronabr`". Isso só é necessário fazer uma única vez pois, ao salvar o
-caderno, o Jupyter se lembra de qual foi o ambiente utilizado.
