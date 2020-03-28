@@ -1,4 +1,5 @@
 # CoronaBR
+[![goodtables.io](https://goodtables.io/badge/github/belisards/coronabr.svg)](https://goodtables.io/github/belisards/coronabr)
 
 Dados e scripts para extrair a série histórica da pandemia COVID-19 no Brasil, de acordo com o Ministério da Saúde.
 
