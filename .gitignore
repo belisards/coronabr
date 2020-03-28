@@ -1,4 +1,3 @@
 env/
 .ipynb_checkpoints
-dados/temporarios/
-
+.Rproj.user
