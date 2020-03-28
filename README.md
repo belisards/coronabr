@@ -40,13 +40,6 @@ A base de dados `corona-br` é disponibilizada sob a licença Open Database Lice
 
 ## Outros projetos
 
-### Projetos de raspagem em R
-
-* [Pacote R para extrair as informações do IVIS](https://liibre.github.io/coronabr/articles/coronabr.html), por Sara Mortara e Andrea Sánchez-Tapia.
-
-* Script para extrair os dados do IVIS em [R, por Júlio Trecenti](https://gist.github.com/jtrecenti/9ed617e060c2b01cfe9cce32577bf9b5)
-
-### Outras bases de dados
 * Lista colaborativa no [fórum Dados Abertos](https://dadosabertos.social/t/dados-sobre-a-pandemia-do-novo-coronavirus/267);
 
 * Painel e projeções do [Observatório COVID-19 BR](https://covid19br.github.io/)
