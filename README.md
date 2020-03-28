@@ -5,7 +5,7 @@ Dados e scripts para extrair a série histórica da pandemia COVID-19 no Brasil,
 
 ## Sobre os dados
 
-No arquivo [corona_brasil.csv](https://github.com/belisards/coronabr/blob/master/dados/corona_brasil.csv), você encontra a série histórica dos casos de COVID-19 segundo o Ministério da Saúde, desde de 30 janeiro de 2020. Saiba mais sobre a metodologia de extração e compilação dos dados abaixo.
+No arquivo [corona_brasil.csv](https://github.com/belisards/coronabr/blob/master/dados/corona_brasil.csv), você encontra a série histórica dos casos de COVID-19 segundo o Ministério da Saúde, desde de 30 janeiro de 2020. Saiba mais sobre a [metodologia de extração e compilação dos dados abaixo](https://github.com/belisards/coronabr/tree/master/dados).
 
 ## Como interpretar os dados?
 
@@ -23,17 +23,6 @@ A tabela é baseada no formato originalmente adotado pelo Ministério da Saúde 
 * date = Data de registro dos dados (%dd/%mm/%yyyy)
 * time = Hora do registro dos dados  (%hh:%mm), quando eram atualizados na Plataforma IVIS
 * uf = Coluna com a sigla da UF
-
-
-## Sobre a coleta dos dados
-
-O projeto foi iniciado em meados de março, disponibilizando um script e a série histórica dos casos de coronavírus (COVID-19). Os dados não eram mostrados diretamente ao público, mas estavam disponíveis no servidor da Plataforma Integrada de Vigilância em Saúde (IVIS). Através da antiga interface - hoje já fora do ar - e do [site atual sobre os casos de coronavírus](https://covid.saude.gov.br/) só é possível disponibilizar números totais. Ao contrário da interface antiga, a atual sequer oferece o detalhamento de óbitos por estado ou opção de download dos dados em CSV.
-
-Entre o dia 18/03/2020 e dia 26/03/2020, os dados foram atualizados unicamente por meio de tabelas disponíveis nos [comunicados no blog do Ministério da Saúde](https://github.com/belisards/coronabr/blob/master/dados/auxiliares/link_minsaude.csv) e, até o dia 25/03, a inserção foi feita manualmente, contando com uma verificação em pares para checagem. 
-
-O script disponibilizado hoje automatiza a extração dos dados destes boletins - e não da plataforma, uma vez que ali não encontramos os dados completos e formatos tabulares. O script também concilia estes dados com a série histórica disponibilizada anteriormente.
-
-Caso tenha alguma dúvida ou perceba alguma inconsistência, entre em contato abrindo uma "Issue" neste repositório do Github. Sinta-se à vontade para contribuir com a melhoria do código ou desenvolvimento de novas funcionalidades por meio de Pull Requests.
 
 ### Licença dos dados
 A base de dados `corona-br` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
