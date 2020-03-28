@@ -25,7 +25,7 @@ A tabela é baseada no formato originalmente adotado pelo Ministério da Saúde 
 * uf = Coluna com a sigla da UF
 
 ### Licença dos dados
-A base de dados `[corona_brasil.csv](https://github.com/belisards/coronabr/blob/master/dados/corona_brasil.csv)` é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
+A base de dados [corona_brasil.csv](https://github.com/belisards/coronabr/blob/master/dados/corona_brasil.csv) é disponibilizada sob a licença Open Database License: [http://opendatacommons.org/licenses/odbl/1.0/](http://opendatacommons.org/licenses/odbl/1.0/). 
 
 
 ## Outros projetos
