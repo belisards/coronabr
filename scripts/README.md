@@ -1,15 +1,6 @@
 # Extrator de dados históricos do coronavírus no Brasil
 
-## Como funciona
-
-### Script em Python
-Os dados são armazenados dentro de um arquivo JavaScript (`.js`). O script os transforma para `.json` e então converte em um CSV. 
-
-Para facilitar a interpretação dos dados, é adicionada uma coluna, baseada no arquivo `indice.csv`, com a sigla da UF correspondente ao campo identificador (`uid`) assinalado no banco original.
-
-O arquivo é exportado no formato CSV, com a data de execução do script. 
-
-**Atenção**: Todos os dados relativos aos casos são extraídos do site do Ministério da Saúde. Não nos responsabilizamos por eventuais erros e inconsistências. Sempre confira e cheque seus dados, através do [site da IVIS]() ou caches do [Web Archive](https://web.archive.org/web/*/http://plataforma.saude.gov.br/novocoronavirus/#COVID-19-brazil).
+Atualmente, o notebook faz a extração da tabela disponibilizada diariamente pelo Ministério da Saúde. A inserção no arquivo `links.csv` e o notebook faz a coleta, limpeza e adequação à série histórica.
 
 ## Executando o script em Python
 
