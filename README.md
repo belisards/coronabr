@@ -5,7 +5,7 @@ Dados e scripts sobre a série histórica da pandemia COVID-19 no Brasil, de aco
 
 ## Sobre os dados
 
-No arquivo [corona_br.csv](https://github.com/belisards/coronabr/blob/master/dados/corona_brasil.csv), você encontra a série histórica dos casos confirmados e mortes de COVID-19 segundo o Ministério da Saúde. 
+No arquivo [corona_brasil.csv](https://github.com/belisards/coronabr/blob/master/dados/corona_brasil.csv), você encontra a série histórica dos casos confirmados e mortes de COVID-19 segundo o Ministério da Saúde. 
 
 O arquivo [serie_ivis.csv](https://github.com/belisards/coronabr/tree/master/dados/serie_ivis.csv) traz a série histórica até 18 de março, quando eram incluídas através da Plataforma IVIS outras informações como casos suspeitos e descartados.
 
