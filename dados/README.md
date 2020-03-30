@@ -26,3 +26,6 @@ A tabela é baseada no formato originalmente adotado pelo Ministério da Saúde 
 
 Exisitam três variáveis também disponibilizadas no arquivo JSON (confirmado, local, deads), que foram descartadas pois estarem vazias. O registro pode ser conferido no histórico do git. 
 
+## Registros duplicados
+
+O arquivo JSON disponibilizado continha registros duplicados. Estes foram identificados (vide o CSV correspondente) e removidos.
