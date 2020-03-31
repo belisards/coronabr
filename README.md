@@ -1,7 +1,9 @@
 # CoronaBR
 [![goodtables.io](https://goodtables.io/badge/github/belisards/coronabr.svg)](https://goodtables.io/github/belisards/coronabr)
 
-Dados e scripts sobre a série histórica da pandemia COVID-19 no Brasil, de acordo com o Ministério da Saúde.
+Dados e scripts para extrair a série histórica da pandemia COVID-19 no Brasil, de acordo com o Ministério da Saúde.
+
+ATENÇÃO: O Ministério da Saúde disponibilizou um [arquivo CSV com a série histórica completa por UF](https://covid.saude.gov.br/assets/files/BRnCov19_30032020.csv), de modo que não é necessário realizar a extração manual atualmente. Este repositório será descontinuado.
 
 ## Sobre os dados
 
